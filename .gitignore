@@ -1,0 +1,8 @@
+target/
+.DS_Store
+.classpath
+.project
+dependency-reduced-pom.xml
+metadata.json
+settings.json
+node_modules

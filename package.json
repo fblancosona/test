@@ -1,0 +1,25 @@
+  {
+  "name": "int-906-test11",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depshield-testing/INT-906-test1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/depshield-testing/INT-906-test1/issues"
+  },
+  "homepage": "https://github.com/depshield-testing/INT-906-test1#readme",
+  "dependencies": {
+    "hawk": "2.3.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
