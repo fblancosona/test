@@ -2,6 +2,11 @@
 - task: NexusIqPipelineTask@1
   inputs:
     nexusIqService: 'NexusIQConnection'
+    applicationId: 'myTest'
+    stage: 'Build'
+- task: NexusIqPipelineTask@1
+  inputs:
+    nexusIqService: 'NexusIQConnection'
     applicationId: 'my-app'
     stage: 'Build'
 # Build your Java project and run tests with Apache Maven.
