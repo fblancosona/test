@@ -1,20 +1,3 @@
-# Maven
-- task: NexusIqPipelineTask@1
-  inputs:
-    nexusIqService: 'NexusIQConnection'
-    applicationId: 'myTest'
-    stage: 'Build'
-- task: NexusIqPipelineTask@1
-  inputs:
-    nexusIqService: 'NexusIQConnection'
-    applicationId: 'my-app'
-    stage: 'Build'
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
-trigger:
-- main
 
 pool:
   vmImage: ubuntu-latest
