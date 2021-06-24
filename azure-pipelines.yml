@@ -1,4 +1,8 @@
-
+- task: NexusIqPipelineTask@1
+  inputs:
+    nexusIqService: 'Nexus iq'
+    applicationId: 'myapp'
+    stage: 'Build'
 pool:
   vmImage: ubuntu-latest
 
