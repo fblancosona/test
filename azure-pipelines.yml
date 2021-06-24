@@ -1,12 +1,14 @@
-- task: NexusIqPipelineTask@1
-  inputs:
-    nexusIqService: 'Nexus iq'
-    applicationId: 'myapp'
-    stage: 'Build'
+
+trigger:
+- master
+
 pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: echo Hello, World!
+  displayName: 'Run a one-line script'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -17,3 +19,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+
+- task: NexusIqPipelineTask@1
+  inputs:
+    nexusIqService: 'Nexus IQ'
+    applicationId: 'myapp'
+    stage: 'Build'
