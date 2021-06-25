@@ -20,10 +20,3 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: NexusIqPipelineTask@1
-  inputs:
-    nexusIqService: 'Nexus IQ'
-    applicationId: 'myapp'
-    stage: 'Build'
-    ignoreSystemError: true
-    javaSystemProperties: 'javaSystemProperties: ''-Djava.net.useSystemProxies=false'''
