@@ -26,4 +26,4 @@ steps:
     applicationId: 'myapp'
     stage: 'Build'
     ignoreSystemError: true
-    javaSystemProperties: '-Djava.net.useSystemProxies=false' 
+    javaSystemProperties: 'javaSystemProperties: ''-Djava.net.useSystemProxies=false'''
