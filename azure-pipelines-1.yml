@@ -40,3 +40,4 @@ steps:
     nexusIqService: 'Nexus IQ'
     applicationId: 'myapp'
     stage: 'Build'
+    ignoreSystemError: true
