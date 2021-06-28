@@ -11,7 +11,9 @@ pool:
 
 steps:
 - script: echo Hello, World!
+- script: mkdir veracode_upload && zip -r $(Build.SourcesDirectory)/veracode_upload/$(build.buildNumber).zip $(Build.SourcesDirectory) -x */.git/* *.go
   displayName: 'Run a one-line script'
+  failOnStderr: true
 
 - task: Maven@3
   displayName: 'Maven Build'
