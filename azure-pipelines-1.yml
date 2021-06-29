@@ -42,3 +42,4 @@ steps:
     applicationId: 'myappb'
     stage: 'Build'
     ignoreSystemError: true
+    failOnStderr: false
