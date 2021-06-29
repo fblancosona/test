@@ -13,6 +13,7 @@ steps:
 - script: echo Hello, World!
 - script: mkdir veracode_upload && zip -r $(Build.SourcesDirectory)/veracode_upload/$(build.buildNumber).zip $(Build.SourcesDirectory) -x */.git/* *.go
   displayName: 'Run a one-line script'
+- script: env | sort
 - script: set XDG_CONFIG_HOME=/ # outputs secondValue
 - script: echo ${XDG_CONFIG_HOME} # outputs secondValue
   
