@@ -6,6 +6,7 @@
 steps:
 - script: mkdir veracode_upload && zip -r $(Build.SourcesDirectory)/veracode_upload/$(build.buildNumber).zip $(Build.SourcesDirectory) -x */.git/* *.go
   displayName: Archive Source for Scans
+  failOnStderr: true
 - task: NexusIqPipelineTask@1
   displayName: Run Nexus IQ Scan
   env:
