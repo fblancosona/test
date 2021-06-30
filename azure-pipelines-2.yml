@@ -17,4 +17,5 @@ steps:
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: false
+    failOnStandardError: 'true'
   continueOnError: false
