@@ -5,6 +5,7 @@
 
 steps:
 - script: mkdir veracode_upload && zip -r $(Build.SourcesDirectory)/veracode_upload/$(build.buildNumber).zip $(Build.SourcesDirectory) -x */.git/* *.go
+- bash: echo hello from stderr 1>&2
   displayName: Archive Source for Scans
   failOnStderr: true
 
