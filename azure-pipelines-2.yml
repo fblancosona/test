@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: Windows_NT
+  vmImage: ubuntu-latest
 
 
 steps:
