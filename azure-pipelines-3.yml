@@ -8,6 +8,8 @@ trigger:
 
 pool:
   name: Default
+  vmImage: 
+   
 
 steps:
 - script: echo Hello, World!
@@ -45,4 +47,4 @@ steps:
     applicationId: 'myapp'
     stage: 'Build'
     ignoreSystemError: true
-    failOnStderr: false
+  failOnStderr: true
