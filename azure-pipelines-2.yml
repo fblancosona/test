@@ -17,5 +17,5 @@ steps:
     applicationId: 'myapp'
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
-    ignoreSystemError: true
+    ignoreSystemError: false
 continueOnError: false
