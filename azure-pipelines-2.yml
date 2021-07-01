@@ -12,7 +12,6 @@ steps:
   displayName: Run Nexus IQ Scan
   env:
     XDG_CONFIG_HOME: '/'
-    System.HostType: null
   inputs:
     nexusIqService: 'Nexus IQ'
     applicationId: 'myapp'
