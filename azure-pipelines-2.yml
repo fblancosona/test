@@ -14,7 +14,7 @@ steps:
     XDG_CONFIG_HOME: '/'
   inputs:
     nexusIqService: 'Nexus IQ'
-    applicationId: 'myapp01'
+    applicationId: 'myapp'
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: true
