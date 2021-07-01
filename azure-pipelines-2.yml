@@ -10,8 +10,6 @@ steps:
 
 - task: NexusIqPipelineTask@1
   displayName: Run Nexus IQ Scan
-  env:
-    XDG_CONFIG_HOME: '/vts'
   inputs:
     nexusIqService: 'Nexus IQ'
     applicationId: 'myapp'
