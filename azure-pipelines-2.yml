@@ -11,7 +11,8 @@ steps:
 - task: NexusIqPipelineTask@1
   displayName: Run Nexus IQ Scan
   env:
-    GIT_DIR_KEY: '/'
+    GIT_DIR_KEY: '/S'
+    JAVA_HOME: ''
   inputs:
     nexusIqService: 'Nexus IQ'
     applicationId: 'myapp'
