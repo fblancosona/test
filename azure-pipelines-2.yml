@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 steps:
-- script:  java -version mkdir veracode_upload && zip -r $(Build.SourcesDirectory)/veracode_upload/$(build.buildNumber).zip $(Build.SourcesDirectory) -x */.git/* *.go
+- script:  java -version && mkdir veracode_upload && zip -r $(Build.SourcesDirectory)/veracode_upload/$(build.buildNumber).zip $(Build.SourcesDirectory) -x */.git/* *.go
   displayName: Archive Source for ScansX
   failOnStderr: true
 
