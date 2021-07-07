@@ -18,5 +18,5 @@ steps:
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: false
-    javaSystemProperties: '-Dhttp.proxyHost=myproxy'
+    javaSystemProperties: '-Dhttp.proxyPort=8080 -Dhttp.proxyHost=myproxy'
 continueOnError: false
