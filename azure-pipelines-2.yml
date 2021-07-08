@@ -12,11 +12,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: |
-      # Write your commands here
-      echo env | sort
-      echo $PATH
-      echo 'Hello world'
+    script: 'env | sort'
       
 - task: NexusIqPipelineTask@1
   displayName: Run Nexus IQ Scan
