@@ -8,6 +8,15 @@ steps:
   displayName: Archive Source for ScansX
   failOnStderr: true
 
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      echo $PATH
+      echo 'Hello world'
+      
 - task: NexusIqPipelineTask@1
   displayName: Run Nexus IQ Scan
   env:
@@ -20,11 +29,3 @@ steps:
     ignoreSystemError: false
     javaSystemProperties: '-Dhttp.proxyHost=myproxy'
 
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      echo $PATH
-      echo 'Hello world'
