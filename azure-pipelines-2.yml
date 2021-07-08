@@ -19,7 +19,7 @@ steps:
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: false
     javaSystemProperties: '-Dhttp.proxyHost=myproxy'
-continueOnError: false
+
 
 - task: Bash@3
   inputs:
