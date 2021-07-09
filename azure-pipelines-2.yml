@@ -24,5 +24,12 @@ steps:
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: false
-    javaSystemProperties: '-Dhttp.proxyHost=myproxy -Dhttp.proxyPort=8080'
+    javaSystemProperties: '-Djava.net.useSystemProxies=false -Dhttp.proxyHost=myproxy -Dhttp.proxyPort=8080'
+    
+- task: NexusIqPipelineTask@1
+  inputs:
+    nexusIqService: 'Nexus IQ'
+    applicationId: 'myapp'
+    stage: 'Build'
+    javaSystemProperties: '-Djava.net.useSystemProxies=false -Dhttp.proxyHost=myproxy -Dhttp.proxyPort=8080'
 
