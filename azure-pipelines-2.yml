@@ -31,5 +31,5 @@ steps:
     nexusIqService: 'Nexus IQ'
     applicationId: 'myapp'
     stage: 'Build'
-    javaSystemProperties: '-Dhttp.proxyHost=myproxy -Dhttp.proxyPort=8080 -Djava.net.useSystemProxies=false'
+    javaSystemProperties: '-Dtmpdir="/tmp/my temp files" -Dhttp.proxyHost=myproxy -Dhttp.proxyPort=8080'
 
