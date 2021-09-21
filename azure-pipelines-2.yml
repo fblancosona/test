@@ -20,7 +20,7 @@ steps:
     XDG_CONFIG_HOME: ''
   inputs:
     nexusIqService: 'Nexus IQ'
-    applicationId: 'myapp'
+    applicationId: 'test01'
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: false
@@ -28,7 +28,7 @@ steps:
 - task: NexusIqPipelineTask@1
   inputs:
     nexusIqService: 'Nexus IQ'
-    applicationId: 'myapp'
+    applicationId: 'test01'
     stage: 'Build'
     javaSystemProperties: '-Dtmpdir="/tmp/my temp files" '
 
