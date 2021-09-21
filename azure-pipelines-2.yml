@@ -24,12 +24,11 @@ steps:
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: false
-    javaSystemProperties: '-Dhttp.proxyPort=8080 -Dhttp.proxyHost=myproxy'
     
 - task: NexusIqPipelineTask@1
   inputs:
     nexusIqService: 'Nexus IQ'
     applicationId: 'myapp'
     stage: 'Build'
-    javaSystemProperties: '-Dtmpdir="/tmp/my temp files" -Dhttp.proxyHost=myproxy -Dhttp.proxyPort=8080'
+    javaSystemProperties: '-Dtmpdir="/tmp/my temp files" '
 
