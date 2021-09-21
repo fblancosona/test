@@ -24,7 +24,7 @@ steps:
     stage: 'Build'
     scanTargets: '**/*.jar, **/*.war, **/*.ear, **/*.zip, **/*.tar.gz, **/*.tgz' 
     ignoreSystemError: false
-    javaSystemProperties: '-DArguments=a=1,b=2,c=3,d=4,e=cow -Dhttp.proxyPort=8080 -Dhttp.proxyHost=myproxy'
+    javaSystemProperties: '-Dhttp.proxyPort=8080 -Dhttp.proxyHost=myproxy'
     
 - task: NexusIqPipelineTask@1
   inputs:
